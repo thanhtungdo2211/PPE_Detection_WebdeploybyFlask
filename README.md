@@ -21,7 +21,7 @@ pip3 install -r requirements.txt
 ```
 ### Inference 
 ```python
-python python detect.py --weights yolov7.pt --conf 0.5 --img-size 640 --source yourimage.jpg
+python python detect.py --weights best_ppedetect.pt --conf 0.5 --img-size 640 --source yourimage.jpg
 ```
 ### Deploy 
 ```python
@@ -29,7 +29,16 @@ cd web_deploy
 FLASK_ENV=development FLASK_APP=app.py flask run
 ```
 ## Result
-
+<div align="center">
+    <a href="./">
+        <img src="./figure/test_batch0_pred.jpg" width="100%"/>
+    </a>
+</div>
+<div align="center">
+    <a href="./">
+        <img src="./figure/result_ppedetect.jpg" width="100%"/>
+    </a>
+</div>
 ## References
 Thanks to the authors:
 [YOLOv7](https://github.com/WongKinYiu/yolov7)
