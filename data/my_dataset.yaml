@@ -1,0 +1,10 @@
+
+train: /media/tung/New Volume/Programing/PPE detection/Total_data_fliped/train
+val: /media/tung/New Volume/Programing/PPE detection/Total_data_fliped/val
+test: /media/tung/New Volume/Programing/PPE detection/Total_data_fliped/test
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'no-protecttive-suit', 'protective-suit' ]
