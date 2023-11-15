@@ -39,6 +39,7 @@ FLASK_ENV=development FLASK_APP=app.py flask run
         <img src="./figure/result_ppedetect.jpg" width="100%"/>
     </a>
 </div>
+
 ## References
 Thanks to the authors:
 [YOLOv7](https://github.com/WongKinYiu/yolov7)
