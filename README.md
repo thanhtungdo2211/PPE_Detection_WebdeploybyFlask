@@ -19,6 +19,15 @@ conda create --name ppe-detection python=3.7
 conda activate ppe-detection
 pip3 install -r requirements.txt
 ```
+### Data Preparation
+
+Our data set is collected from information sources such as Roboflow, Kaggle, Google Image. You can download the data from [here](https://husteduvn-my.sharepoint.com/:u:/g/personal/tung_dt193177_sis_hust_edu_vn/ESJqniE8-bVLhmESrq4MmVkBe8P1NA-psUIdnhFW7s0VFg?e=s1iYE8).
+Additionally, you can perform data augmentation techniques:
+```python
+cd data_aug
+python flip_img.py
+python blur_img.py
+```
 ### Inference 
 ```python
 python python detect.py --weights best_ppedetect.pt --conf 0.5 --img-size 640 --source yourimage.jpg
