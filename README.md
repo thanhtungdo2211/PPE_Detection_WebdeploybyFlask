@@ -28,9 +28,11 @@ cd data_aug
 python flip_img.py
 python blur_img.py
 ```
+### Training
+You can follow the model training instructions in the file [train_yolo_v7.ipynb](train_yolo_v7.ipynb)
 ### Inference 
 ```python
-python python detect.py --weights best_ppedetect.pt --conf 0.5 --img-size 640 --source yourimage.jpg
+python detect.py --weights best_ppedetect.pt --conf 0.5 --img-size 640 --source yourimage.jpg
 ```
 ### Deploy 
 ```python
